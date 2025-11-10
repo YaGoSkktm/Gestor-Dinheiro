@@ -1,4 +1,4 @@
-# Minhas Finanças (ou o nome que você escolher)
+# Carteira Pessoal
 
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 
@@ -28,25 +28,12 @@ Este projeto é um campo de aprendizado e está em constante evolução. O plano
 * **Python 3**
 
 ---
-## 🚀 Como Executar o Projeto
+## 🚀 Como Executar (Versão Atual)
 
-Siga os passos abaixo para rodar o projeto localmente:
-
-* **1. Verifique se o Python está instalado**
-python --version
-Deve aparecer algo como "Python 3.x.x"
-Caso não tenha o Python, baixe em: https://www.python.org/downloads/
-
-* **2. Clone este repositório**
-git clone https://github.com/seu-usuario/minhas-financas.git
-
-* **3. Acesse a pasta do projeto**
-cd minhas-financas
-
-* **4. Execute o programa**
-python Controle_De_Dinheiro.py
-
-* **5. Pronto!**
-O menu principal será exibido no console. 
-A partir daí, você pode registrar suas transações e acompanhar seu saldo.
+1.  Certifique-se de ter o **Python 3** instalado.
+2.  Clone este repositório.
+3.  Navegue até a pasta do projeto e execute o script:
+    ```bash
+    python Controle_De_Dinheiro.py
+    ```
 ---
