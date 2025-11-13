@@ -8,11 +8,13 @@ Um projeto de console em Python para controle financeiro pessoal. O foco atual �
 
 ## 🎯 Objetivo Principal
 
-O objetivo é criar uma ferramenta simples para que o usuário possa anotar e monitorar suas transações financeiras (entradas e gastos), ajudando no controle do orçamento pessoal, desde criar um cofrinho até gerar gráficos com coletas de dados
+A ideia é criar uma ferramenta simples para que o usuário possa anotar e monitorar suas transações financeiras (entradas e gastos), ajudando no controle do orçamento pessoal, desde criar um cofrinho até gerar gráficos com coletas de dados.
+Mas o objetivo principal é criar uma forma de eu adicionar os conhecimentos que eu for adquirindo ao longo do meu aprendizado, criando uma espécie de RoadMap
+
 
 ---
 
-## 🚀 Roadmap (Próximos Passos)
+## 🚀 Próximos Passos (RoadMap)
 
 Este projeto é um campo de aprendizado e está em constante evolução. O plano é adicionar as seguintes funcionalidades:
 
@@ -31,7 +33,7 @@ Este projeto é um campo de aprendizado e está em constante evolução. O plano
 ---
 ## 🚀 Como Executar (Versão Atual)
 
-1.  Certifique-se de ter o **Python 3** instalado.
+1.  Certifique-se de ter o **Python 3** e uma **IDE** instalado, recomendo vs code.
 2.  Clone este repositório.
 3.  Navegue até a pasta do projeto e execute o script:
     ```bash
