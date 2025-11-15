@@ -33,7 +33,6 @@ def escolher_opcao():
                 print('Erro! Digite apenas números.')
             continue
     
-
 def escolher_tipo_transacao():
     print('[1] Para Adicionar \n[2] Para retirar')
     try:
@@ -49,7 +48,6 @@ def escolher_tipo_transacao():
     except ValueError:
         print('Erro! Digite apenas Números.')
      
-
 def criando_cofrinho():
     global valor_conta
     nome_cofre = str(input('Qual será o nome do seu cofrinho? ')).strip()
