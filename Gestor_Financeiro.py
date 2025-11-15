@@ -32,7 +32,7 @@ def escolher_opcao():
             except ValueError:
                 print('Erro! Digite apenas números.')
             continue
-      
+    
 
 def escolher_tipo_transacao():
     print('[1] Para Adicionar \n[2] Para retirar')
@@ -51,12 +51,19 @@ def escolher_tipo_transacao():
      
 
 def criando_cofrinho():
+    global valor_conta
     nome_cofre = str(input('Qual será o nome do seu cofrinho? ')).strip()
     meta_cofre = float(input('Qual meta você quer definir para esse cofrinho? R$'))
     valor_inicial_cofrinho = float(input('Qual valor inicial você deseja colocar no cofre? R$'))
+    if valor_inicial_cofrinho > valor_conta:
+        print('Você Não possui esse saldo na conta, o valor inicial será R$00,00')
+        valor_inicial_cofrinho = 0
+    else:
+        valor_conta -= valor_inicial_cofrinho
     criacao_cofrinho = {'nome': nome_cofre, 'meta': meta_cofre, 'valor': [valor_inicial_cofrinho]}
     cofrinho.append(criacao_cofrinho)
-
+          
+    
 
 while True:
     Mostrar_Menu()
@@ -151,14 +158,17 @@ while True:
 
             if 0 <= indice_adicionar_cofre < len(cofrinho):
                 adicionar_valor_cofrinho = float(input('Quanto deseja adicionar? R$'))
-                cofrinho[indice_adicionar_cofre]['valor'].append(adicionar_valor_cofrinho)  
-                print('Valor adicionado com sucesso!')
+                if adicionar_valor_cofrinho < valor_conta:
+                    cofrinho[indice_adicionar_cofre]['valor'].append(adicionar_valor_cofrinho)
+                    valor_conta -= adicionar_valor_cofrinho
+                    print('Valor adicionado com sucesso!')
+                else:
+                    print('Você não possui saldo na sua conta')
             else:
                 print('Houve um erro!')
                 continue
         else:
             print('Você ainda não possui um cofrinho')
-
 
     elif opcao == 7:
         if len(cofrinho) > 0:
@@ -169,10 +179,11 @@ while True:
 
             if 0 <= indice_remover_cofre < len(cofrinho) and sum(cofrinho[indice_remover_cofre]['valor']) > 0:
                 valor_remover = float(input("Quanto deseja retirar? R$"))
+                valor_conta += valor_remover
 
                 if valor_remover <= sum(cofrinho[indice_remover_cofre]['valor']):
                     cofrinho[indice_remover_cofre]['valor'].append(-valor_remover)
-                    print('Valor removido com sucesso')
+                    print('Valor retirado com sucesso')
                 else:
                     print('Você não possui saldo suficiente nesse cofrinho.')
             else:
