@@ -41,6 +41,6 @@ Este projeto é um campo de aprendizado e está em constante evolução. O plano
     ```
 ---
 
-# ⚠️ IMPORTANTE ⚠️ !
+## ⚠️ IMPORTANTE ⚠️ 
 O projeto ficará temporariamente parado.
 Preciso estudar POO para implementar o flask ou o django, pandas e Json. e depois preciso estudar os próprios módulos (provavelmente começarei por flask ou django)
