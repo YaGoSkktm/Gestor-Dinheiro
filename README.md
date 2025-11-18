@@ -16,15 +16,13 @@ Mas o objetivo principal é criar uma forma de eu adicionar os conhecimentos que
 
 ## 🚀 Próximos Passos (RoadMap)
 
-## 🚀 Próximos Passos (RoadMap)
-
 Este projeto é um campo de aprendizado e está em constante evolução. O plano é adicionar as seguintes funcionalidades:
 
-- [x] **Histórico de Transações:** Implementar a funcionalidade de listar todas as transações realizadas.
-- [x] **Sistema de cofrinho com metas ou emegência:** Implementar funcionalidade de criar até 3 cofrinhos, com metas para bater.
-- [ ] **Persistência de Dados:** Salvar as transações e o saldo em um arquivo (ex: **JSON**), para que os dados não sejam perdidos ao fechar o programa.
-- [ ] **Análise de Dados:** Utilizar a biblioteca **Pandas** para ler os dados salvos e, futuramente, gerar relatórios ou gráficos simples sobre os gastos.
-- [ ] **Interface Web:** Criar uma interface de usuário mais amigável e visual utilizando o framework **Flask ou Django**.
+*  **Histórico de Transações:** Implementar a funcionalidade de listar todas as transações realizadas. (feito ✅)
+* **Sistema de cofrinho com metas ou emegência:** Implementar funcionalidade de criar até 3 cofrinhos, com metas para bater (feito ✅)
+* **Persistência de Dados:** Salvar as transações e o saldo em um arquivo (ex: **JSON**), para que os dados não sejam perdidos ao fechar o programa. (Será desenvolvido ⏳)
+* **Análise de Dados:** Utilizar a biblioteca **Pandas** para ler os dados salvos e, futuramente, gerar relatórios ou gráficos simples sobre os gastos. (Será desenvolvido ⏳)
+* **Interface Web:** Criar uma interface de usuário mais amigável e visual utilizando o framework **Flask ou Django**. (Será desenvolvido ⏳)
 
 ---
 
